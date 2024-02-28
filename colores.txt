@@ -1,0 +1,4 @@
+#b91777 rosado
+#133157 Azul oscuro
+#31b6e8 Azul claro
+#662a43 morado
