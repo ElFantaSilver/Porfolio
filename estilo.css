@@ -1,0 +1,318 @@
+
+html,body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    background: rgb(185,23,118);
+    background: linear-gradient(308deg, rgba(185,23,118,1) 0%, rgba(34,74,125,1) 35%, rgba(117,54,198,1) 100%);
+}
+@font-face {
+    font-family: "Neonrec";
+    src:
+    local("Neonrec"),
+      url("Neonrec.otf") format("opentype"),
+      url("Neonrec.otf") format("opentype"),
+      url("trickster-outline.woff") format("woff");
+    }
+    
+    /*Div divisores*/
+    .divisor{
+        width: 100%;
+        padding-top:50px ;
+        text-align: center;
+    }
+    .divisor h1{
+        margin: 0%;
+        padding-top: 6%;
+    }
+/*Tecnologias*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    width: calc(33.33% - 20px);
+    height: 200px;
+}
+
+.gallery-item img {
+    width: 80px;
+    height: 80px;
+    background-color: #31b6e8;
+    border-radius:100px ;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.5s ease;
+    animation: btn 2s;
+}
+.gallery-item-text {
+    position: absolute;
+    color: white;
+    margin-left:20px  ;
+    font-size: 18px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease; /* Transición suave */
+}
+.gallery-item-text2{
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease; /* Transición suave */
+}
+.gallery-item:hover .gallery-item-text2 {
+    opacity: 1; /* Mostrar el texto al pasar el cursor */
+}
+.gallery-item:hover .gallery-item-text {
+    opacity: 1; /* Mostrar el texto al pasar el cursor */
+}
+.hola{
+    padding-top: 80px;
+    padding-left: 100px;
+}
+.uno{
+    animation-delay: 0.5s;
+}
+.dos{
+    animation-delay: 0.8s;
+}
+@keyframes btn{
+    from{
+        transform: translate(3000px) rotate(0deg);
+        
+    }
+    to{
+        transform: translate(0px) rotate(-720deg);
+    }
+}
+/*Menu*/
+.circular-menu {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #161d309e ;
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+.menu-option:hover {
+    color: #b91777;
+}
+.menu-option {
+    text-decoration: none;
+    font-weight:bolder;
+    display: inline-block;
+    margin: 10px 0;
+    padding-left:10px;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 8px #556472,
+    0 0 25px #556472, 
+    0 0 50px #556472,
+    0 0 100px #556472;
+}
+/*Contenedores*/
+.containerh{
+    height: 100vh;
+}
+/*Secion dos*/
+#con2{
+    height: 80vh;
+    /*background-color:black ;*/
+    color: whitesmoke;
+    display: flex;
+}
+
+#con2 i{
+    border: #fff solid 0.3px;
+    display: flex;
+    flex-direction:row;  
+}
+/*Portada*/
+#con1 h1{
+    font-family: "Neonrec";
+}
+
+#con1 {
+    display: flex;
+    background-image: url(cyberpunk-6061251_1920.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px black;
+}
+
+/*Texto*/
+.neon:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #b91777,
+    0 0 25px #b91777, 
+    0 0 50px #b91777,
+    0 0 100px #b91777;
+}
+
+.neon{
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #31b6e8,
+    0 0 25px #31b6e8, 
+    0 0 50px #31b6e8,
+    0 0 100px #31b6e8;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-weight: bold;
+    background: linear-gradient(
+        100deg
+        #2372b6
+        #b91777
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+    .barra{
+        height: 80vh;
+        width: 1%;
+    }
+    /*Formulario*/
+    #con4{
+        /*background-color: #2372b6;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo {
+        text-align: center;
+        padding-top: 1%;
+        margin-bottom: 50px;
+    }
+    .formulario {
+        margin-top: 50px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+    .formulario h2 {
+        margin-bottom: 20px;
+    }
+.formulario label {
+    font-weight: bold;
+}
+.btn-send {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-send:hover {
+    background-color: #0056b3;
+}
+#con3{
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 100px;
+    text-align: center;
+
+}
+#con3 img{
+    width: 100%;
+    filter: blur(20px); /* Cambia el valor para ajustar la intensidad del desenfoque */
+    transition: all 0.5s;
+}
+#con3 img:hover{
+    filter: blur(0px); /* Cambia el valor para ajustar la intensidad del desenfoque */
+}
+.carousel{
+    height: 80%;
+}
+/*Footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Estilos de los íconos de redes sociales */
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Estilos al pasar el ratón sobre los íconos de redes sociales */
+  .social-icons a:hover {
+    opacity: 0.8;
+  }
+
+@media screen and (max-width: 800px) {
+    .containerh {
+        height: 90vh;
+    }
+    .hola{
+        padding-left: 10px;
+    }
+    #con2 {
+        flex-direction: column;
+    }
+    .gallery-item {
+        width: 100px;
+
+    }
+    #con2{
+        height: auto;
+        flex-direction: column;
+    }
+    .neon{
+        font-size: 2em;
+
+    }
+    .barra{
+        display: none;
+    }
+    .circular-menu{
+        width: 43%;
+    }
+    .divisor{
+        display: inline-block;
+    }
+    .formulario{
+        margin-top: 15px;
+    }
+    .menu-option{
+        font-size: 10px;
+    }
+    .circular-menu {
+        width: 80%;
+    }
+}
