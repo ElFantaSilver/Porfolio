@@ -25,12 +25,53 @@ html,body{
         margin: 0%;
         padding-top: 6%;
     }
+/*XD*/
+.social-icons2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.social-icons2 a {
+    color: white;
+    font-size: 40px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons2 a:hover {
+    opacity: 0.8;
+}
 /*Tecnologias*/
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+.coco p{
+   background-color: #556472;
+   width: 28%;
+   margin-left: 35%;
+   padding: 10px;
+   border-radius: 20px;
+   display: flex;
+}
+/*añadidos */
+.social-icons2{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 .gallery-item {
@@ -126,6 +167,7 @@ html,body{
 /*Contenedores*/
 .containerh{
     height: 100vh;
+    max-height: 100%;
 }
 /*Secion dos*/
 #con2{
@@ -134,7 +176,9 @@ html,body{
     color: whitesmoke;
     display: flex;
 }
-
+.textareaa{
+    resize: none;
+}
 #con2 i{
     border: #fff solid 0.3px;
     display: flex;
@@ -162,9 +206,9 @@ html,body{
     0 0 50px #b91777,
     0 0 100px #b91777;
 }
-
 .neon{
-    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 6em;
@@ -209,6 +253,13 @@ html,body{
         padding: 10px;
         border-radius: 10px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        resize: none;
+    }
+    #mensaje{
+        resize: none !important;
+    }
+    .form-control{
+        resize: none !important;
     }
     .formulario h2 {
         margin-bottom: 20px;
@@ -240,11 +291,9 @@ html,body{
 }
 #con3 img{
     width: 100%;
-    filter: blur(20px); /* Cambia el valor para ajustar la intensidad del desenfoque */
     transition: all 0.5s;
 }
 #con3 img:hover{
-    filter: blur(0px); /* Cambia el valor para ajustar la intensidad del desenfoque */
 }
 .carousel{
     height: 80%;
@@ -277,7 +326,7 @@ footer {
 
 @media screen and (max-width: 800px) {
     .containerh {
-        height: 90vh;
+        height: 100vh;
     }
     .hola{
         padding-left: 10px;
